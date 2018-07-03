@@ -10,15 +10,6 @@ viewTree::viewTree(QWidget *parent, Element * root) :
     scene = new QGraphicsScene();
     ui->graphicsView->setScene(scene);
     QPen pet(Qt::blue);
-    //QGraphicsTextItem * text = scene->addText("Helloworld");
-    //text->setPos(-75, -60);
-    //point = new treePoint(30,0, "Pfqwfkwqf[jqifhwqafhnqwkjfmnwjkqnghqubwngujhwqbnhujfwq");
-    //point2 = new treePoint(20,100, "privet");
-    //connect(point, SIGNAL(clicked()),this, SLOT(on_checkBox_clicked()));
-    //items.push_back(new treePoint(20,0, "privet"));
-    //items.push_back(new treePoint(-10,200, "suka"));
-
-    //scene->addLine(items[0]->x+items[0]->length/2,items[0]->y+15,items[1]->x+items[1]->length/2,items[1]->y, pet);
     createTree(root, 0, 0, 0, pet);
     for(int i = 0; i<items.size(); i++)
         scene->addItem(items[i]);

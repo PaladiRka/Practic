@@ -12,18 +12,6 @@ treePoint::~treePoint()
     //do anything
 }
 
-void treePoint::mousePressEvent(QGraphicsSceneMouseEvent *event)
-{
-    //emit clicked();
-    //QGraphicsItem::mousePressEvent(event);
-}
-
-void treePoint::mouseMoveEvent(QGraphicsSceneMouseEvent *event)
-{
-    emit clicked();
-    QGraphicsItem::mouseMoveEvent(event);
-}
-
 QRectF treePoint::boundingRect() const
 {
     return QRectF(x,y,(text.size()*8)+10,15);
